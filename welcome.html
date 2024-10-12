@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Character encoding for the document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta tag -->
+        <title>Yafri Manager Interface</title> <!-- Title of the webpage -->
+        <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS stylesheet -->
+    </head>
+    <body>
+        <!-- Header section containing the logo and user information -->
+        <header>
+            <div class="logo">
+                <div class="circle"></div> <!-- Placeholder for a logo graphic -->
+                <h1>Yafri FM</h1> <!-- Main title of the radio station -->
+            </div>
+            <div class="role">MANAGER</div> <!-- Displays the user's role -->
+            <button class="user-button">User ▼</button> <!-- Button for user options -->
+        </header>
+
+        <div class="container"> <!-- Main container for layout -->
+            <nav class="sidebar" aria-label="Main Navigation"> <!-- Sidebar navigation -->
+                <button class="toggle-btn">☰</button> <!-- Button to toggle sidebar visibility -->
+                <ul>
+                    <li><a href="welcome.html"><button class="nav-btnN">Welcome</button></a></li> <!-- Welcome link -->
+                    <li><a href="calendar.html"><button class="nav-btn">Calendar</button></a></li> <!-- Calendar link -->
+                    <li><a href="songs_report.html"><button class="nav-btn">Songs Report</button></a></li> <!-- Songs Report link -->
+                    <li><a href="djs.html"><button class="nav-btn">DJs</button></a></li> <!-- DJs link -->
+                </ul>
+            </nav>
+
+            <main> <!-- Main content area -->
+                <section class="SectionName"> <!-- Section for the welcome message -->
+                    <h2> Welcome </h2>
+                </section>
+
+                <section class="Calendar_welcome"> <!-- Section for the weekly calendar -->
+                    <table id="Calendar"> <!-- Table for displaying weekly schedule -->
+                        <thead>
+                            <tr>
+                                <th>Hours</th> <!-- Column for time slots -->
+                                <th>Monday</th> <!-- Day of the week -->
+                                <th>Tuesday</th> <!-- Day of the week -->
+                                <th>Wednesday</th> <!-- Day of the week -->
+                                <th>Thursday</th> <!-- Day of the week -->
+                                <th>Friday</th> <!-- Day of the week -->
+                                <th>Saturday</th> <!-- Day of the week -->
+                                <th>Sunday</th> <!-- Day of the week -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows for each hour of the day; currently empty -->
+                            <tr><td>08:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>09:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>10:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>11:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>12:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>13:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>14:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>15:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>16:00</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="Playlist"> <!-- Section for today's playlist -->
+                    <div class="titlePlaylist">Today's Playlist</div> <!-- Title for playlist -->
+                    <div class="Playlistlist">
+                        <ol> <!-- Ordered list of songs -->
+                            <li>Fighting for Dreams - Xim</li>
+                            <li>Gata Celosa - Chen Cortes</li>
+                            <li>Noche Lenta - DJ Juice</li>
+                            <li>Te Voy Bien - Xenia Bond</li>
+                            <li>A tu lado - Yera</li>
+                            <li>TF Top - Ary Black</li>
+                            <li>Lo Siento - Losa Chanel</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="CurrentSong"> <!-- Section for the currently playing song -->
+                    <div class="song-info"> <!-- Container for song information -->
+                        <div class="controls"> <!-- Controls for playback -->
+                            <button>&lt;&lt;</button> <!-- Previous song button -->
+                            <button>||</button> <!-- Play/Pause button -->
+                            <button>&gt;&gt;</button> <!-- Next song button -->
+                        </div>
+                        <div class="SongTitle"> <!-- Display current song title -->
+                            <p>Gata Celosa - Chen Cortes</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar"> <!-- Progress bar for song playback -->
+                        <div class="progress"></div> <!-- Visual representation of progress -->
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer> <!-- Footer section with additional links -->
+            <ul>
+                <li><a href="#">Contact Us</a></li> <!-- Link to contact page -->
+                <li><a href="#">Privacy Policy</a></li> <!-- Link to privacy policy -->
+                <li><a href="#">Terms and Conditions</a></li> <!-- Link to terms and conditions -->
+            </ul>
+        </footer>
+    </body>
+</html>

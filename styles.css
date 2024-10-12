@@ -1,0 +1,450 @@
+/* Global Styles */ 
+* {
+    margin: 5px; /* Set margin around all elements */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Set box-sizing to border-box for consistent sizing */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox layout for header */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically centered */
+    padding: 1em; /* Add padding around header */
+    background-color: white; /* Set background color to white */
+    width: 100%; /* Set width to 100% of the parent */
+}
+.circle {
+    width: 40px; /* Set width of the circle */
+    height: 40px; /* Set height of the circle */
+    background-color: blue; /* Set circle background color to blue */
+    border-radius: 50%; /* Make the circle round */
+    margin-right: 10px; /* Add right margin */
+}
+
+.logo {
+    display: flex; /* Use flexbox for logo layout */
+    align-items: center; /* Center logo items vertically */
+    flex-grow: 1; /* Allow logo to grow and take available space */
+}
+
+.role {
+    flex-grow: 1; /* Allow role text to grow */
+    align-items: center; /* Center role items vertically */
+    font-size: 1.2em; /* Set font size */
+    font-weight: bold; /* Make font bold */
+}
+
+.user-button {
+    flex-grow: 0; /* Prevent the user button from growing */
+    background-color: #4ae29b; /* Set background color */
+    border: none; /* Remove border */
+    padding: 0.5em 1em; /* Add padding */
+    border-radius: 5px; /* Round the corners */
+    color: #000; /* Set text color to black */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Courier New', Courier, monospace; /* Set font family */
+    text-align: left; /* Align text to the left */
+    font-size: medium; /* Set font size */
+}
+
+/* Main Container Styles */
+.container {
+    display: flex; /* Use flexbox for main container layout */
+    height: 80vh; /* Set container height */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 15%; /* Set sidebar width */
+    background-color: #27282a; /* Set background color */
+    padding-top: 0px; /* No padding at the top */
+    border-radius: 5px; /* Round the corners */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove default list styling */
+}
+
+.sidebar ul li {
+    margin: 5px 20px; /* Set margin for sidebar list items */
+}
+
+.toggle-btn {
+    background-color: #27282a; /* Set background color */
+    color: #fff; /* Set text color to white */
+    font-size: medium; /* Set font size */
+    border: none; /* Remove border */
+}
+
+/* Navigation Button Styles */
+.nav-btn {
+    width: 100%; /* Set button width to 100% */
+    padding: 15px; /* Add padding */
+    background-color: #fff; /* Set background color to white */
+    color: #000; /* Set text color to black */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: left; /* Align text to the left */
+    font-size: 16px; /* Set font size */
+    border-radius: 5px; /* Round the corners */
+}
+
+.nav-btnN {
+    width: 100%; /* Set button width to 100% */
+    padding: 15px; /* Add padding */
+    background-color: #5a5d67; /* Set background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: left; /* Align text to the left */
+    font-size: 16px; /* Set font size */
+    border-radius: 5px; /* Round the corners */
+}
+
+.nav-btn:hover {
+    background-color: #4ae29b; /* Change background color on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+/* Main Content Area Styles */
+main {
+    display: grid; /* Use grid layout for main content */
+    grid-template-columns: 1fr 1fr; /* Define two equal columns */
+    grid-template-rows: auto auto auto; /* Define rows with automatic height */
+    grid-gap: 5px; /* Set gap between grid items */
+    width: auto; /* Set width to auto */
+    padding: 20px; /* Add padding */
+    background-color: #647cfc; /* Set background color */
+    border-radius: 5px; /* Round the corners */
+    padding-top: 5px; /* Add top padding */
+}
+
+/* Welcome Section Styles */
+.SectionName {
+    grid-column: 1; /* Position in the first column */
+    background-color: #4ae29b; /* Set background color */
+    padding: 5px; /* Add padding */
+    text-align: left; /* Align text to the left */
+    border-radius: 5px; /* Round the corners */
+    font-size: small; /* Set font size */
+    width: fit-content; /* Set width to fit content */
+    margin-bottom: 0px; /* Remove bottom margin */
+    height: fit-content; /* Set height to fit content */
+}
+
+/* Calendar and Playlist Section Styles */
+.Calendar_welcome {
+    grid-column: 1; /* Position in the first column */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    font-family: 'Courier New', Courier, monospace; /* Set font family */
+    margin-top: 0px; /* Remove top margin */
+}
+
+.Playlist {
+    grid-column: 2; /* Position in the second column */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 0px; /* Remove top margin */
+}
+
+.Calendar_calendar {
+    grid-column: 2; /* Position in the second column */
+    grid-row: 2; /* Position in the second row */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    font-family: 'Courier New', Courier, monospace; /* Set font family */
+    margin-top: 0px; /* Remove top margin */
+}
+
+.DJContainer {
+    grid-column: 1; /* Position in the first column */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 0px; /* Remove top margin */
+}
+
+.Playlist_Producer {
+    grid-column: 1; /* Position in the first column */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 0px; /* Remove top margin */
+}
+
+.Playlist_DJs {
+    grid-column: 2; /* Position in the second column */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 0px; /* Remove top margin */
+}
+
+.Playlist_Both {
+    grid-column: 3; /* Position in the third column */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 0px; /* Remove top margin */
+}
+
+/* Current Song Playing Styles */
+.CurrentSong {
+    grid-column: 1 / span 3; /* Span across three columns */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Round the corners */
+}
+
+.DJContainer_DJs {
+    grid-column: 1 / -1; /* Span across all columns */
+    background-color: #b7c2fb; /* Set background color */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 0px; /* No top margin */
+}
+
+/* Forms Styles */
+.Forms {
+    grid-column: 2 / 4; /* Span across columns 2 and 3 */
+    background-color: #b7c2fb; /* Match bubble background */
+    padding: 5px; /* Add padding */
+    border-radius: 5px; /* Round the corners */
+    margin-bottom: 0px; /* No bottom margin */
+}
+
+/* Selection Container Styles */
+.selection-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Form Styles within Selection Container */
+.selection-container form {
+    display: flex; /* Align items in a row */
+    gap: 10px; /* Add space between label, select, and button */
+}
+
+/* Button Styles within Forms */
+.Forms button {
+    background-color: #e0e0e0; /* Set background color */
+    color: #000; /* Set text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Round the corners */
+    padding: 5px 5px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button Hover Styles within Forms */
+.Forms button:hover {
+    background-color: #4ae29b; /* Change background color on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+/* Playlist Title Styles */
+.titlePlaylist {
+    font-size: large; /* Set font size */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Calendar Table Styles */
+#Calendar {
+    width: auto; /* Set width to auto */
+    border-collapse: separate; /* Separate borders */
+    border-spacing: 5px; /* Space between borders */
+    table-layout: auto; /* Automatic table layout */
+    margin: 20px auto; /* Center table with margin */
+}
+
+#Calendar th, #Calendar td {
+    padding: 10px; /* Add padding to table cells */
+    border: 1px solid #000; /* Add border */
+    text-align: center; /* Center text */
+    vertical-align: middle; /* Align text vertically in the middle */
+    width: auto; /* Set width to auto */
+    border-radius: 10px; /* Round corners of table cells */
+}
+
+#Calendar th {
+    background-color: #3e4a99; /* Set background color for header */
+    color: white; /* Set text color for header */
+}
+
+#Calendar td {
+    background-color: #f2f3f8; /* Set background color for table data */
+    color: black; /* Set text color for table data */
+}
+
+/* Playlist Title Styles */
+.titlePlaylist {
+    background-color: #3e4a99; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 5px; /* Add padding */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Round corners */
+    font-size: medium; /* Set font size */
+    width: auto; /* Set width to auto */
+    height: 50px; /* Set fixed height */
+}
+
+/* Playlist List Styles */
+.Playlistlist {
+    font-size: 1em; /* Set font size */
+    max-height: 450px; /* Set maximum height */
+    overflow-y: auto; /* Add vertical scrolling if necessary */
+}
+
+.Playlistlist ol {
+    padding-left: 20px; /* Add padding to the left for ordered list */
+}
+
+/* Individual Playlist Item Styles */
+.Playlistlist li {
+    background-color: #e0e0e0; /* Set background color for list items */
+    border-radius: 5px; /* Round corners */
+    padding: 10px; /* Add padding */
+    margin: 5px 0; /* Add vertical margin */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Playlist Item Hover Styles */
+.Playlistlist li:hover {
+    background-color: #4ae29b; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* DJ Bubbles Layout */
+.bubbles-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Distribute space around bubbles */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    padding: 10px; /* Add padding */
+    max-height: 450px; /* Set maximum height */
+    overflow-y: auto; /* Add vertical scrolling if necessary */
+}
+
+.bubble {
+    background-color: #e0e0e0; /* Set background color for bubbles */
+    color: black; /* Set text color */
+    min-width: 100px; /* Set minimum width */
+    max-width: 200px; /* Set maximum width */
+    padding: 15px; /* Add padding */
+    border-radius: 20px; /* Round corners for bubble appearance */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text inside bubble */
+    font-size: 0.9em; /* Set font size */
+    margin: 10px; /* Add margin between bubbles */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* DJ Name Styles within Bubbles */
+.bubble strong {
+    display: block; /* Display DJ name on a separate line */
+    margin-bottom: 5px; /* Add margin below DJ name */
+    font-size: 1em; /* Set font size for DJ name */
+}
+
+/* Bubble Hover Styles */
+.bubble:hover {
+    background-color: #4ae29b; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* DJ Title Styles */
+.titleDJs {
+    background-color: #3e4a99; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 5px; /* Add padding */
+    padding-bottom: 5px; /* Add additional bottom padding */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Round corners */
+    font-size: medium; /* Set font size */
+    width: auto; /* Set width to auto */
+    height: 50px; /* Set fixed height */
+}
+
+/* Song Info and Controls Styles */
+.song-info {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 20px; /* Space between elements */
+    font-family: 'Georgia', sans-serif; /* Set font family */
+}
+
+.SongTitle {
+    font-style: bold; /* Set font style to bold */
+    text-align: center; /* Center text */
+    flex-grow: 1; /* Allow title to grow */
+}
+
+/* Controls Styles */
+.controls {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Distribute space around controls */
+    width: 150px; /* Set fixed width */
+}
+
+/* Control Button Styles */
+.controls button {
+    background-color: #e0e0e0; /* Set background color */
+    border: none; /* Remove default border */
+    padding: 0.5em 1em; /* Add padding */
+    color: #000; /* Set text color */
+    font-size: 1.2em; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Round corners */
+}
+
+/* Control Button Hover Styles */
+.controls button:hover {
+    background-color: #4ae29b; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    background-color: #e0e0e0; /* Set background color */
+    height: 5px; /* Set height */
+    border-radius: 5px; /* Round corners */
+    margin-top: 0.5em; /* Add top margin */
+}
+
+.progress {
+    background-color: #3e4a99; /* Set progress color */
+    height: 100%; /* Set height to fill progress bar */
+    width: 50%; /* Set width to represent progress */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #717589; /* Set background color */
+    padding: 15px; /* Add padding */
+    color: white; /* Set text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Round corners */
+}
+
+footer ul {
+    list-style: none; /* Remove list style */
+}
+
+footer ul li {
+    display: inline; /* Display items inline */
+    margin: 0 10px; /* Add margin */
+
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

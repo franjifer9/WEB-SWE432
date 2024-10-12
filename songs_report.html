@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!-- Character set and viewport settings for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yafri Manager Interface</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header section -->
+<header>
+    <!-- Logo container with a circular element and title -->
+    <div class="logo">
+        <div class="circle"></div>
+        <h1>Yafri FM</h1>
+    </div>
+    <!-- Display the user role -->
+    <div class="role">MANAGER</div>
+    <!-- User button with a dropdown indicator -->
+    <button class="user-button">User ▼</button>
+</header>
+
+<!-- Main container for the interface -->
+<div class="container">
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <!-- Button to toggle sidebar visibility -->
+        <button class="toggle-btn">☰</button>
+        <ul>
+            <!-- Navigation links to different sections -->
+            <li><a href="welcome.html"><button class="nav-btn">Welcome</button></a></li>
+            <li><a href="calendar.html"><button class="nav-btn">Calendar</button></a></li>
+            <li><a href="songs_report.html"><button class="nav-btnN">Songs Report</button></a></li>
+            <li><a href="djs.html"><button class="nav-btn">DJs</button></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Section for the Songs Report -->
+        <section class="SectionName">
+            <h2>Songs Report</h2>
+        </section>
+
+        <!-- Form section for selecting a DJ -->
+        <section class="Forms">
+            <form>
+                <label for="djs">Choose a DJ:</label>
+                <select id="djs" name="djs">
+                    <!-- Dropdown options for different DJs -->
+                    <option value="DJ Snake">DJ Snake</option>
+                    <option value="J Balvin">J Balvin</option>
+                    <option value="Calvin Harris">Calvin Harris</option>
+                    <option value="David Guetta">David Guetta</option>
+                    <option value="Farruko">Farruko</option>
+                    <option value="Bad Bunny">Bad Bunny</option>
+                    <option value="Karol G">Karol G</option>
+                    <option value="Nicky Jam">Nicky Jam</option>
+                    <option value="Ozuna">Ozuna</option>
+                    <option value="Maluma">Maluma</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>           
+        </section>
+
+        <!-- Section for the Producer's Playlist -->
+        <section class="Playlist_Producer">
+            <div class="titlePlaylist">Producer's Playlist</div>
+            <div class="Playlistlist">
+                <ol>
+                    <!-- Ordered list of songs in the producer's playlist -->
+                    <li>Dákiti - Bad Bunny & Jhay Cortez</li>
+                    <li>Callaíta - Bad Bunny & Tainy</li>
+                    <li>Vivir Mi Vida - Marc Anthony</li>
+                    <li>Taki Taki - DJ Snake ft. Selena Gomez, Ozuna, Cardi B</li>
+                    <li>Yo Perreo Sola - Bad Bunny</li>
+                    <li>Me Gusta - Anitta ft. Cardi B & Mike Towers</li>
+                    <li>Despacito - Luis Fonsi ft. Daddy Yankee</li>
+                    <li>Baila Baila Baila - Rosalía</li>
+                    <li>La Canción - Bad Bunny & J Balvin</li>
+                    <li>Hasta el Amanecer - Nicky Jam</li>
+                    <li>Reggaetón Lento - CNCO</li>
+                    <li>La Modelo - Ozuna ft. Cardi B</li>
+                    <li>Te Boté (Remix) - Nio Garcia, Ozuna, Bad Bunny</li>
+                    <li>Con Calma - Daddy Yankee ft. Snow</li>
+                    <li>Adicto - Tainy, Anuel AA & Ozuna</li>
+                    <li>Mi Gente - J Balvin, Willy William ft. Beyoncé</li>
+                    <li>Súbeme La Radio - Enrique Iglesias ft. Descemer Bueno & Zion & Lennox</li>
+                    <li>Un Verano Sin Ti - Bad Bunny</li>
+                    <li>Criminal - Natti Natasha & Ozuna</li>
+                    <li>Reggaetón - DJ's Song</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section for the DJs Playlist -->
+        <section class="Playlist_DJs">
+            <div class="titlePlaylist">DJs Playlist</div>
+            <div class="Playlistlist">
+                <ol>
+                    <!-- Ordered list of songs in the DJs playlist -->
+                    <li>La Canción - Bad Bunny & J Balvin</li>
+                    <li>Me Gusta - Anitta ft. Cardi B & Mike Towers</li>
+                    <li>Despacito - Luis Fonsi ft. Daddy Yankee</li>
+                    <li>Dákiti - Bad Bunny & Jhay Cortez</li>
+                    <li>Yo Perreo Sola - Bad Bunny</li>
+                    <li>Hasta el Amanecer - Nicky Jam</li>
+                    <li>Callaíta - Bad Bunny & Tainy</li>
+                    <li>La Modelo - Ozuna ft. Cardi B</li>
+                    <li>Adicto - Tainy, Anuel AA & Ozuna</li>
+                    <li>Vivir Mi Vida - Marc Anthony</li>
+                    <li>Con Calma - Daddy Yankee ft. Snow</li>
+                    <li>Reggaetón Lento - CNCO</li>
+                    <li>Te Boté (Remix) - Nio Garcia, Ozuna, Bad Bunny</li>
+                    <li>Mi Gente - J Balvin, Willy William ft. Beyoncé</li>
+                    <li>Criminal - Natti Natasha & Ozuna</li>
+                    <li>Súbeme La Radio - Enrique Iglesias ft. Descemer Bueno & Zion & Lennox</li>
+                    <li>Un Verano Sin Ti - Bad Bunny</li>
+                    <li>Ritmo - The Black Eyed Peas & J Balvin</li>
+                    <li>La Noche - La Factoría</li>
+                    <li>Pa' Romperla - Bad Bunny & J Balvin</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section for songs in both playlists -->
+        <section class="Playlist_Both">
+            <div class="titlePlaylist">Songs in both playlists</div>
+            <div class="Playlistlist">
+                <ol>
+                    <!-- Ordered list of songs present in both playlists -->
+                    <li>Dákiti - Bad Bunny & Jhay Cortez</li>
+                    <li>Callaíta - Bad Bunny & Tainy</li>
+                    <li>Vivir Mi Vida - Marc Anthony</li>
+                    <li>Me Gusta - Anitta ft. Cardi B & Mike Towers</li>
+                    <li>Despacito - Luis Fonsi ft. Daddy Yankee</li>
+                    <li>La Canción - Bad Bunny & J Balvin</li>
+                    <li>Hasta el Amanecer - Nicky Jam</li>
+                    <li>Yo Perreo Sola - Bad Bunny</li>
+                    <li>La Modelo - Ozuna ft. Cardi B</li>
+                    <li>Adicto - Tainy, Anuel AA & Ozuna</li>
+                    <li>Reggaetón Lento - CNCO</li>
+                    <li>Te Boté (Remix) - Nio Garcia, Ozuna, Bad Bunny</li>
+                    <li>Mi Gente - J Balvin, Willy William ft. Beyoncé</li>
+                    <li>Criminal - Natti Natasha & Ozuna</li>
+                    <li>Súbeme La Radio - Enrique Iglesias ft. Descemer Bueno & Zion & Lennox</li>
+                    <li>Un Verano Sin Ti - Bad Bunny</li>
+                    <li>Pa' Romperla - Bad Bunny & J Balvin</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section for the current song being played -->
+        <section class="CurrentSong">
+            <div class="song-info">
+                <!-- Controls for song playback -->
+                <div class="controls">
+                    <button>&lt;&lt;</button> <!-- Previous song button -->
+                    <button>||</button> <!-- Play/Pause button -->
+                    <button>&gt;&gt;</button> <!-- Next song button -->
+                </div>
+                <!-- Display the title of the current song -->
+                <div class="SongTitle">
+                    <p>Dákiti - Bad Bunny & Jhay Cortez</p>
+                </div>
+            </div>
+            <!-- Progress bar for the current song -->
+            <div class="progress-bar">
+                <div class="progress"></div> <!-- Inner progress indicator -->
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Footer section with links -->
+<footer>
+    <ul>
+        <li><a href="#">Contact Us</a></li> <!-- Link to contact page -->
+        <li><a href="#">Privacy Policy</a></li> <!-- Link to privacy policy -->
+        <li><a href="#">Terms of Service</a></li> <!-- Link to terms of service -->
+    </ul>
+</footer>
+
+</body>
+</html>

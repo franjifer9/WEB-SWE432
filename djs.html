@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- Specifies the document type and version of HTML being used -->
+<html lang="en"> <!-- Opens the HTML document with English as the primary language -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on different devices -->
+    <title>Yafri Manager Interface</title> <!-- Sets the title of the document -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+    <header> <!-- Header section of the page -->
+        <div class="logo"> <!-- Container for the logo -->
+            <div class="circle"></div> <!-- Placeholder for a circular logo element -->
+            <h1>Yafri FM</h1> <!-- Main title of the radio station -->
+        </div>
+        <div class="role">MANAGER</div> <!-- Displays the role of the current user -->
+        <button class="user-button">User ▼</button> <!-- Button to show user options -->
+    </header>
+    <div class="container"> <!-- Main container for the content -->
+        <nav class="sidebar"> <!-- Sidebar navigation menu -->
+            <button class="toggle-btn">☰</button> <!-- Button to toggle the sidebar visibility -->
+            <ul> <!-- Unordered list of navigation links -->
+                <li><a href="welcome.html"><button class="nav-btn">Welcome</button></a></li> <!-- Link to the Welcome page -->
+                <li><a href="calendar.html"><button class="nav-btn">Calendar</button></a></li> <!-- Link to the Calendar page -->
+                <li><a href="songs_report.html"><button class="nav-btn">Songs Report</button></a></li> <!-- Link to the Songs Report page -->
+                <li><a href="djs.html"><button class="nav-btnN">DJs</button></a></li> <!-- Link to the DJs page -->
+            </ul>
+        </nav>
+        <main> <!-- Main content area -->
+            <section class="SectionName"> <!-- Section for the main heading -->
+                <h2>DJs</h2> <!-- Subheading for the DJ section -->
+            </section>
+            <section class="Forms"> <!-- Section for search input -->
+                <input type="text" placeholder="Search DJs..." maxlength="25" onkeypress="return isAlphanumeric(event)"/> <!-- Input field for searching DJs -->
+                <button type="submit">Search</button> <!-- Button to submit the search -->
+            </section>
+            <section class="DJContainer_DJs"> <!-- Container for the list of DJs -->
+                <div class="titleDJs">DJ List</div> <!-- Title for the DJ list -->
+                <div class="bubbles-container"> <!-- Container for DJ descriptions -->
+                    <!-- Individual DJ description bubbles -->
+                    <div class="bubble">
+                        <strong>DJ Snake</strong><br>
+                        DJ Snake is a Grammy-nominated producer and DJ known for his energetic tracks that fuse hip-hop, dance, and electronic music. He gained international fame with hits like "Turn Down for What" and "Taki Taki," showcasing his ability to blend genres and collaborate with top artists worldwide.
+                    </div>
+                    <div class="bubble">
+                        <strong>J Balvin</strong><br>
+                        J Balvin is a Colombian reggaeton artist who has become a global ambassador for Latin music. Known for his vibrant style and infectious beats, he has achieved numerous chart-topping hits, including "Mi Gente" and "Ginza." Balvin's music incorporates elements of pop and hip-hop, making him one of the most influential figures in the genre today.
+                    </div>
+                    <div class="bubble">
+                        <strong>Calvin Harris</strong><br>
+                        Calvin Harris is a Scottish DJ and producer celebrated for his innovative sound that merges electronic music with pop influences. With hits like "Summer" and "Feel So Close," he has collaborated with top artists across various genres, earning multiple awards and accolades, solidifying his position as one of the world's highest-paid DJs.
+                    </div>
+                    <div class="bubble">
+                        <strong>David Guetta</strong><br>
+                        David Guetta is a French DJ and music producer known for his ability to blend electronic music with mainstream pop. With hits like "Titanium" featuring Sia and "When Love Takes Over," he has played a pivotal role in popularizing EDM globally and has collaborated with artists from multiple genres, making him a staple in the music industry.
+                    </div>
+                    <div class="bubble">
+                        <strong>Farruko</strong><br>
+                        Farruko is a Puerto Rican artist known for his versatile style, combining reggaeton, Latin trap, and dancehall. His music often reflects his cultural roots, with hits like "Krippy Kush" and "Pepas," which showcase his dynamic approach to modern Latin music and his ability to connect with audiences across the globe.
+                    </div>
+                    <div class="bubble">
+                        <strong>Bad Bunny</strong><br>
+                        Bad Bunny is a groundbreaking Puerto Rican artist whose music transcends genres, blending reggaeton, trap, and Latin pop. Known for his unique style and thought-provoking lyrics, he has rapidly become a global sensation with hits like "Dakiti" and "Yonaguni," pushing the boundaries of Latin music and gaining a dedicated fanbase worldwide.
+                    </div>
+                    <div class="bubble">
+                        <strong>Karol G</strong><br>
+                        Karol G is a Colombian singer and songwriter recognized for her powerful voice and impactful lyrics. She has made significant contributions to the reggaeton and Latin pop scenes, with chart-topping hits like "Tusa" and "Bichota," inspiring millions with her music and becoming a role model for aspiring female artists.
+                    </div>
+                    <div class="bubble">
+                        <strong>Nicky Jam</strong><br>
+                        Nicky Jam is a celebrated reggaeton artist whose career has spanned over two decades. Known for his smooth vocals and heartfelt lyrics, he has experienced a remarkable resurgence in the music industry with hits like "El Perdón" and "X." His music often reflects his personal struggles and triumphs, resonating with fans worldwide.
+                    </div>
+                    <div class="bubble">
+                        <strong>Ozuna</strong><br>
+                        Ozuna is a Puerto Rican singer and songwriter recognized for his melodic voice and catchy hooks. He has taken the Latin music scene by storm with hits like "Taki Taki" and "Baila Baila Baila," often blending reggaeton with tropical influences, making him one of the most influential artists in Latin music today.
+                    </div>
+                    <div class="bubble">
+                        <strong>Maluma</strong><br>
+                        Maluma is a Colombian singer and actor known for his romantic reggaeton and pop songs. With a smooth style and captivating stage presence, he has become a favorite among fans with hits like "Felices los 4" and "Hawái." Maluma's music often explores themes of love and relationships, appealing to a wide audience.
+                    </div>
+                </div>
+            </section>
+            
+            <section class="CurrentSong"> <!-- Section for displaying the current song being played -->
+                <div class="song-info"> <!-- Container for song information -->
+                    <div class="controls"> <!-- Controls for the song playback -->
+                        <button>&lt;&lt;</button> <!-- Previous song button -->
+                        <button>||</button> <!-- Play/Pause button -->
+                        <button>&gt;&gt;</button> <!-- Next song button -->
+                    </div>
+                    <div class="SongTitle"> <!-- Container for the song title -->
+                        <p>Gata Celosa - Chen Cortes</p> <!-- Displays the title of the current song -->
+                    </div>
+                </div>
+                <div class="progress-bar"> <!-- Progress bar for the song -->
+                    <div class="progress"></div> <!-- Filler for the progress bar -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer> <!-- Footer section of the page -->
+        <ul> <!-- Unordered list for footer links -->
+            <li><a href="#">Contact Us</a></li> <!-- Link to contact page -->
+            <li><a href="#">Privacy Policy</a></li> <!-- Link to privacy policy -->
+            <li><a href="#">Terms and Conditions</a></li> <!-- Link to terms and conditions -->
+        </ul>
+    </footer>
+</body>
+</html>

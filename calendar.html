@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yafri Manager Interface</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="logo"> <!-- Logo container -->
+            <div class="circle"></div> <!-- Placeholder for logo circle -->
+            <h1>Yafri FM</h1> <!-- Main title -->
+        </div>
+        <div class="role">MANAGER</div> <!-- Display role -->
+        <button class="user-button">User ▼</button> <!-- User dropdown button -->
+    </header>
+
+    <div class="container">
+        <!-- Sidebar navigation -->
+        <nav class="sidebar">
+            <button class="toggle-btn">☰</button> <!-- Toggle button for sidebar -->
+            <ul>
+                <li><a href="welcome.html"><button class="nav-btn">Welcome</button></a></li>
+                <li><a href="calendar.html"><button class="nav-btnN">Calendar</button></a></li>
+                <li><a href="songs_report.html"><button class="nav-btn">Songs Report</button></a></li>
+                <li><a href="djs.html"><button class="nav-btn">DJs</button></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="SectionName">
+                <h2> Calendar </h2> <!-- Section title -->
+            </section>
+
+            <!-- Week selection form -->
+            <section class="Forms">
+                <label for="week">Select Week Start Date:</label> <!-- Label for date input -->
+                <input type="date" id="week" name="week" maxlength="8"> <!-- Date input for selecting week -->
+                <button type="submit">Submit</button> <!-- Submit button -->
+            </section>
+
+            <!-- Calendar table -->
+            <section class="Calendar_calendar">
+                <table id="Calendar"> <!-- Table for the weekly calendar -->
+                    <thead>
+                        <tr>
+                            <th>Hours</th> <!-- Column for hours -->
+                            <th>Monday</th> <!-- Column for Monday -->
+                            <th>Tuesday</th> <!-- Column for Tuesday -->
+                            <th>Wednesday</th> <!-- Column for Wednesday -->
+                            <th>Thursday</th> <!-- Column for Thursday -->
+                            <th>Friday</th> <!-- Column for Friday -->
+                            <th>Saturday</th> <!-- Column for Saturday -->
+                            <th>Sunday</th> <!-- Column for Sunday -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows for each hour of the day -->
+                        <tr>
+                            <td>08:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>09:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- DJ List section -->
+            <section class="DJContainer">
+                <div class="titleDJs">DJ List</div> <!-- Section title for DJs -->
+                <div class="bubbles-container">
+                    <!-- Individual DJ bubbles with names and descriptions -->
+                    <div class="bubble">
+                        <strong>DJ Snake</strong><br>
+                        Renowned for hits like "Taki Taki," blending genres and electrifying crowds.
+                    </div>
+                    <div class="bubble">
+                        <strong>J Balvin</strong><br>
+                        A leading figure in Reggaeton, known for his vibrant style and chart-topping hits.
+                    </div>
+                    <div class="bubble">
+                        <strong>Calvin Harris</strong><br>
+                        Fuses Latin sounds with electronic music, creating global dance anthems.
+                    </div>
+                    <div class="bubble">
+                        <strong>David Guetta</strong><br>
+                        Famous for collaborations in Latin music, bringing a fresh sound to the genre.
+                    </div>
+                    <div class="bubble">
+                        <strong>Farruko</strong><br>
+                        An influential artist in Reggaeton and Latin trap with a unique sound.
+                    </div>
+                    <div class="bubble">
+                        <strong>Bad Bunny</strong><br>
+                        A trailblazer in the Latin music scene with chart-topping hits.
+                    </div>
+                    <div class="bubble">
+                        <strong>Karol G</strong><br>
+                        A powerhouse in Reggaeton and Latin pop, inspiring millions with her music.
+                    </div>
+                    <div class="bubble">
+                        <strong>Nicky Jam</strong><br>
+                        Known for his resurgence in the Reggaeton scene with international hits.
+                    </div>
+                    <div class="bubble">
+                        <strong>Ozuna</strong><br>
+                        A global sensation in Latin music, blending Reggaeton and Trap influences.
+                    </div>
+                    <div class="bubble">
+                        <strong>Maluma</strong><br>
+                        Known for his smooth vocals and hit collaborations in Latin music.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current song section -->
+            <section class="CurrentSong">
+                <div class="song-info">
+                    <div class="controls"> <!-- Music control buttons -->
+                        <button>&lt;&lt;</button> <!-- Previous button -->
+                        <button>||</button> <!-- Play/Pause button -->
+                        <button>&gt;&gt;</button> <!-- Next button -->
+                    </div>
+                    <div class="SongTitle">
+                        <p>Gata Celosa - Chen Cortes</p> <!-- Current song title -->
+                    </div>
+                </div>
+                <div class="progress-bar"> <!-- Progress bar for the current song -->
+                    <div class="progress"></div> <!-- Inner progress bar -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <ul>
+            <li><a href="#">Contact Us</a></li> <!-- Contact link -->
+            <li><a href="#">Privacy Policy</a></li> <!-- Privacy policy link -->
+            <li><a href="#">Terms and Conditions</a></li> <!-- Terms and conditions link -->
+        </ul>
+    </footer>
+</body>
+</html>
