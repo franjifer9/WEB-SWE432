@@ -20,8 +20,8 @@
     <div class="container">
         <!-- Sidebar navigation -->
         <nav class="sidebar">
-            <button class="toggle-btn">☰</button> <!-- Toggle button for sidebar -->
-            <ul>
+            <button class="toggle-btn" >☰</button>
+            <ul id="barcontent">
                 <li><a href="welcome.html"><button class="nav-btn">Welcome</button></a></li>
                 <li><a href="calendar.html"><button class="nav-btnN">Calendar</button></a></li>
                 <li><a href="songs_report.html"><button class="nav-btn">Songs Report</button></a></li>
@@ -36,9 +36,9 @@
 
             <!-- Week selection form -->
             <section class="Forms">
-                <label for="week">Select Week Start Date:</label> <!-- Label for date input -->
+                <label for="week">Select Date:</label> <!-- Label for date input -->
                 <input type="date" id="week" name="week" maxlength="8"> <!-- Date input for selecting week -->
-                <button type="submit">Submit</button> <!-- Submit button -->
+                <button type="submit" id="submitBtn">Submit</button> <!-- Submit button -->
             </section>
 
             <!-- Calendar table -->
@@ -60,93 +60,93 @@
                         <!-- Rows for each hour of the day -->
                         <tr>
                             <td>08:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>09:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>10:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>11:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>12:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>13:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>14:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>15:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                         <tr>
                             <td>16:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
+                            <td class="droppable"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -157,44 +157,44 @@
                 <div class="titleDJs">DJ List</div> <!-- Section title for DJs -->
                 <div class="bubbles-container">
                     <!-- Individual DJ bubbles with names and descriptions -->
-                    <div class="bubble">
-                        <strong>DJ Snake</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">DJ Snake</strong><br>
                         Renowned for hits like "Taki Taki," blending genres and electrifying crowds.
                     </div>
-                    <div class="bubble">
-                        <strong>J Balvin</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">J Balvin</strong><br>
                         A leading figure in Reggaeton, known for his vibrant style and chart-topping hits.
                     </div>
-                    <div class="bubble">
-                        <strong>Calvin Harris</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">Calvin Harris</strong><br>
                         Fuses Latin sounds with electronic music, creating global dance anthems.
                     </div>
-                    <div class="bubble">
-                        <strong>David Guetta</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">David Guetta</strong><br>
                         Famous for collaborations in Latin music, bringing a fresh sound to the genre.
                     </div>
-                    <div class="bubble">
-                        <strong>Farruko</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">Farruko</strong><br>
                         An influential artist in Reggaeton and Latin trap with a unique sound.
                     </div>
-                    <div class="bubble">
-                        <strong>Bad Bunny</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">Bad Bunny</strong><br>
                         A trailblazer in the Latin music scene with chart-topping hits.
                     </div>
-                    <div class="bubble">
-                        <strong>Karol G</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong  class="dj-name">Karol G</strong><br>
                         A powerhouse in Reggaeton and Latin pop, inspiring millions with her music.
                     </div>
-                    <div class="bubble">
-                        <strong>Nicky Jam</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">Nicky Jam</strong><br>
                         Known for his resurgence in the Reggaeton scene with international hits.
                     </div>
-                    <div class="bubble">
-                        <strong>Ozuna</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong  class="dj-name">Ozuna</strong><br>
                         A global sensation in Latin music, blending Reggaeton and Trap influences.
                     </div>
-                    <div class="bubble">
-                        <strong>Maluma</strong><br>
+                    <div class="bubble" draggable="true">
+                        <strong class="dj-name">Maluma</strong><br>
                         Known for his smooth vocals and hit collaborations in Latin music.
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                 <div class="song-info">
                     <div class="controls"> <!-- Music control buttons -->
                         <button>&lt;&lt;</button> <!-- Previous button -->
-                        <button>||</button> <!-- Play/Pause button -->
+                        <button id ="play" onclick="alert('Music paused')" >||</button> <!-- Play/Pause button -->
                         <button>&gt;&gt;</button> <!-- Next button -->
                     </div>
                     <div class="SongTitle">
@@ -227,5 +227,7 @@
             <li><a href="#">Terms and Conditions</a></li> <!-- Terms and conditions link -->
         </ul>
     </footer>
+    <script src="js.js"></script>
+
 </body>
 </html>

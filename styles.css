@@ -61,13 +61,28 @@ header {
     padding-top: 0px; /* No padding at the top */
     border-radius: 5px; /* Round the corners */
 }
+.sidebar.collapsed  {
 
+    width: 50px;
+}
+.sidebar.collapsed #barcontent {
+    display: none;
+}
 .sidebar ul {
     list-style: none; /* Remove default list styling */
+}
+.sidebar-content {
+    display: block;
+    transition: opacity 0.3s ease;
 }
 
 .sidebar ul li {
     margin: 5px 20px; /* Set margin for sidebar list items */
+}
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
 }
 
 .toggle-btn {
@@ -75,6 +90,9 @@ header {
     color: #fff; /* Set text color to white */
     font-size: medium; /* Set font size */
     border: none; /* Remove border */
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 /* Navigation Button Styles */
@@ -152,13 +170,15 @@ main {
 }
 
 .Calendar_calendar {
-    grid-column: 2; /* Position in the second column */
+    grid-column: 2/span 3; /* Position in the second column */
     grid-row: 2; /* Position in the second row */
     background-color: #b7c2fb; /* Set background color */
     padding: 10px; /* Add padding */
     border-radius: 10px; /* Round the corners */
     font-family: 'Courier New', Courier, monospace; /* Set font family */
     margin-top: 0px; /* Remove top margin */
+    max-height: 530px; /* Set maximum height */
+    overflow-y: auto; /* Add vertical scrolling if necessary */
 }
 
 .DJContainer {
@@ -261,6 +281,7 @@ main {
     border-spacing: 5px; /* Space between borders */
     table-layout: auto; /* Automatic table layout */
     margin: 20px auto; /* Center table with margin */
+    
 }
 
 #Calendar th, #Calendar td {
@@ -297,7 +318,7 @@ main {
 /* Playlist List Styles */
 .Playlistlist {
     font-size: 1em; /* Set font size */
-    max-height: 450px; /* Set maximum height */
+    max-height: 430px; /* Set maximum height */
     overflow-y: auto; /* Add vertical scrolling if necessary */
 }
 
@@ -321,12 +342,13 @@ main {
 }
 
 /* DJ Bubbles Layout */
+
 .bubbles-container {
     display: flex; /* Use flexbox layout */
     justify-content: space-around; /* Distribute space around bubbles */
     flex-wrap: wrap; /* Allow wrapping to next line */
     padding: 10px; /* Add padding */
-    max-height: 450px; /* Set maximum height */
+    max-height: 430px; /* Set maximum height */
     overflow-y: auto; /* Add vertical scrolling if necessary */
 }
 

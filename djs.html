@@ -17,8 +17,8 @@
     </header>
     <div class="container"> <!-- Main container for the content -->
         <nav class="sidebar"> <!-- Sidebar navigation menu -->
-            <button class="toggle-btn">☰</button> <!-- Button to toggle the sidebar visibility -->
-            <ul> <!-- Unordered list of navigation links -->
+            <button class="toggle-btn" >☰</button>
+            <ul id="barcontent"> <!-- Unordered list of navigation links -->
                 <li><a href="welcome.html"><button class="nav-btn">Welcome</button></a></li> <!-- Link to the Welcome page -->
                 <li><a href="calendar.html"><button class="nav-btn">Calendar</button></a></li> <!-- Link to the Calendar page -->
                 <li><a href="songs_report.html"><button class="nav-btn">Songs Report</button></a></li> <!-- Link to the Songs Report page -->
@@ -30,9 +30,11 @@
                 <h2>DJs</h2> <!-- Subheading for the DJ section -->
             </section>
             <section class="Forms"> <!-- Section for search input -->
-                <input type="text" placeholder="Search DJs..." maxlength="25" onkeypress="return isAlphanumeric(event)"/> <!-- Input field for searching DJs -->
-                <button type="submit">Search</button> <!-- Button to submit the search -->
-            </section>
+                <form>
+                    <input type="text" placeholder="Search DJs..." maxlength="25" onkeypress="return isAlphanumeric(event)" id="search-input" /> <!-- Input field for searching DJs -->
+                    <button type="submit">Search</button> <!-- Button to submit the search -->
+                </form>
+                </section>
             <section class="DJContainer_DJs"> <!-- Container for the list of DJs -->
                 <div class="titleDJs">DJ List</div> <!-- Title for the DJ list -->
                 <div class="bubbles-container"> <!-- Container for DJ descriptions -->
@@ -84,7 +86,7 @@
                 <div class="song-info"> <!-- Container for song information -->
                     <div class="controls"> <!-- Controls for the song playback -->
                         <button>&lt;&lt;</button> <!-- Previous song button -->
-                        <button>||</button> <!-- Play/Pause button -->
+                        <button id ="play" onclick="alert('Music paused')" >||</button> <!-- Play/Pause button -->
                         <button>&gt;&gt;</button> <!-- Next song button -->
                     </div>
                     <div class="SongTitle"> <!-- Container for the song title -->
@@ -104,5 +106,7 @@
             <li><a href="#">Terms and Conditions</a></li> <!-- Link to terms and conditions -->
         </ul>
     </footer>
+    <script src="js.js"></script>
+
 </body>
 </html>

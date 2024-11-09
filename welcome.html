@@ -20,7 +20,7 @@
         <div class="container"> <!-- Main container for layout -->
             <nav class="sidebar" aria-label="Main Navigation"> <!-- Sidebar navigation -->
                 <button class="toggle-btn">☰</button> <!-- Button to toggle sidebar visibility -->
-                <ul>
+                <ul id="barcontent">
                     <li><a href="welcome.html"><button class="nav-btnN">Welcome</button></a></li> <!-- Welcome link -->
                     <li><a href="calendar.html"><button class="nav-btn">Calendar</button></a></li> <!-- Calendar link -->
                     <li><a href="songs_report.html"><button class="nav-btn">Songs Report</button></a></li> <!-- Songs Report link -->
@@ -81,7 +81,7 @@
                     <div class="song-info"> <!-- Container for song information -->
                         <div class="controls"> <!-- Controls for playback -->
                             <button>&lt;&lt;</button> <!-- Previous song button -->
-                            <button>||</button> <!-- Play/Pause button -->
+                            <button id ="play" onclick="alert('Music paused')" >||</button> <!-- Play/Pause button -->
                             <button>&gt;&gt;</button> <!-- Next song button -->
                         </div>
                         <div class="SongTitle"> <!-- Display current song title -->
@@ -102,5 +102,7 @@
                 <li><a href="#">Terms and Conditions</a></li> <!-- Link to terms and conditions -->
             </ul>
         </footer>
+<script type="module" src="js/main.js"></script>
+
     </body>
 </html>
